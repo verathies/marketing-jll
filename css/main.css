@@ -155,6 +155,19 @@ a {  /* hyperlink in e-mail address & nav */
   font-size: 1em; 
 }
 
+.button { /* styling for button*/
+  border: none;
+  color: white;
+  padding: 13px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: #6C9D3B;
+}
+
 /*******************************************************  CAPABILITIES-  MOBILE    **************************************************/
 
 #capabilities{
@@ -183,6 +196,9 @@ a {  /* hyperlink in e-mail address & nav */
   width: 100%;
 }
 
+#capabilities .button {
+  margin: 4px 0 50px 0;
+}
 /*******************************************************  FOOTER- MOBILE    **************************************************/
 footer {
   color: #ffff; 
@@ -192,7 +208,7 @@ footer {
 
 
 #contact h3{
-  text-align: center;
+  text-align:center;
   width: 100%;
 }
 
@@ -368,6 +384,9 @@ p {
   line-height: 1.285;
 }
 
+br { /*remove break in google adwords/ online rep- might need to adjust when styling this section*/
+  display: none;
+}
 
 /******************************************* FOOTER TABLET *******************************************/
 footer {  /*add padding-top to footer section*/
