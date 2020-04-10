@@ -395,7 +395,7 @@ footer .social-icon i {
 }
 
 .half-width {
-  width: 50%; 
+  width: 49%; 
   align-items:flex-start;
 }
 .fifth-width { /*container for capabilities CPC-CPM*/
@@ -407,6 +407,10 @@ footer .social-icon i {
 
 .plus-padding-top{ /* remove padding for half-width. added this in capabilities for entire container*/
   padding-top: 0;
+}
+
+.plus-padding-left{
+  padding-left: 10px;
 }
 /**  general font styles -TABLET here **/
 h2{
@@ -422,7 +426,7 @@ h3{
 
 /******************************************* CAPABILITIES TABLET *******************************************/
 #capabilities .full-width{
-  margin-top: 50px; /* add 30px margin at the top of each */
+  margin-top: 50px; /* add 50px margin at the top of each */
 }
 #capabilities .half-width{ /*align text & img at the same height*/
   align-self: flex-start ;
@@ -431,7 +435,9 @@ h3{
 #capabilities p {
   margin: 15px 20px 15px 0;
 }
-
+#flex-order{ /* amend order of desk.jpg */
+  order:-1;
+}
 
 /******************************************* FOOTER TABLET *******************************************/
 footer {  /*add padding-top to footer section*/
@@ -460,15 +466,52 @@ footer .half-width{ /* minimum height for footer content to be aligned with alig
 
 @media only screen and (min-width: 1200px){
 
+  .content-wrapper{
+    padding: 100px 40px;
+  }
+  .fifth-width{
+    max-width:18%;
+    min-height: 340px;
+    margin: 10px 10px 0 0;
+    padding: 30px 0 30px 10px;
+  }
 
+  .button { /*button styles*/
+    font-size: 1.1875em;
+    padding: 20px 37px;
+  }
 
+  /**  general font styles -DESKTOP here **/
 
+  h3{
+    font-size: 1.8em;
+  }
 
+  p{
+    font-size: 1.1875em;
+    line-height: 1.33;
+  }
 /******************************************* CAPABILITIES DESKTOP *******************************************/
 
-#capabilities br { /*remove break in google adwords/ online rep- might need to adjust when styling this section*/
-    display: none;
-}
+  #break { /*remove break in google adwords/ online rep*/
+      display: none;
+  }
+
+  #capabilities .full-width{
+    margin-top: 120px; /* add 80px margin at the top of each */
+  }
+
+  .fifth-width p{ /* CPC-CPM smaller font-size*/
+    font-size: 1em;
+  }
+
+  #capabilities p {
+    margin: 25px 35px 30px 0;
+  }
+
+
+
+
 } /* END OF MEDIA QUERY DESKTOP*/
 
 /* ==========================================================================
