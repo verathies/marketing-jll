@@ -276,6 +276,7 @@ max-width:450px;
 }
 
 
+
 /*******************************************************  PRICING- MOBILE    **************************************************/
 #pricing {
   background: url('../img/women.jpg');
@@ -617,6 +618,7 @@ footer .half-width{ /* minimum height for footer content to be aligned with alig
 
 #hero{
   min-height: 800px;
+  background-attachment:fixed;
 }
 
 #jumbotron{

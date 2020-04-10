@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animate.css"> <!-- animate.css animation link-->
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -36,7 +37,7 @@
       <h1>JLL Marketing</h1>
       <span>Your Digital Marketing Agency in Barcelona, Spain</span>
       <div> <!-- button -->
-        <a href="#contact"><button id="hero-button">Learn more</button></a>
+        <a href="#contact"><button id="hero-button" class="wow zoomIn">Learn more</button></a>
       </div>
     </div>
   </section>
@@ -64,30 +65,30 @@
     <p>We work with country databases in Germany, Belgium and Spain. Here are the different email marketing services we provide :
     </p>
     <div class="full-width">
-      <div class="fifth-width">
+      <div class="fifth-width wow zoomIn">
         <h4>CPC</h4>
         <p>CPC stands for cost per click advertising. Here the advertiser pays when a click is made on an ad.
         </p>
       </div>
-      <div class="fifth-width">
+      <div class="fifth-width wow zoomIn">
         <h4>CPL</h4>
         <p>Here the advertiser pays when a lead form is completed and submitted. CPL is common where it is unlikely that someone will buy immediately. 
           It can be a very effective way to buy. The CPL differs on how much information you are requesting from the lead.
         </p>
       </div>
-      <div class="fifth-width">
+      <div class="fifth-width wow zoomIn">
         <h4>CPS/ CPA</h4>
         <p>You only pay if a purchase is made. This is relatively low-risk way to buy media because the advertiser only pays when revenue is driven. 
           Usually, media  isn’t sold this way because of the risk in the ad purchase.
         </p>
       </div>
-      <div class="fifth-width">
+      <div class="fifth-width wow zoomIn">
         <h4>CPD</h4>
         <p>In mobile app marketing, CPD refers to media programs where the advertiser pays for every installed app. 
           Lots of app marketing is purchased CPD, because it is a fast way to drive installs.
         </p>
       </div>
-      <div class="fifth-width">
+      <div class="fifth-width wow zoomIn">
         <h4>CPM</h4>
         <p>CPM is one of the most common ways of buying digital media. You pay for every time your ad loads on a page or in an app. It’s a simple way to buy.
         </p>
@@ -105,7 +106,7 @@
           creating devoted brand advocates and even driving leads and sales. If you are not active/presence on the social Media’s please contact us for a free discussion.
         </p>
         <div> <!-- button -->
-          <a href="#contact"><button class="button">Contact us!</button></a>
+          <a href="#contact"><button class="button wow bounceIn"data-wow-delay="0.1s">Contact us!</button></a>
         </div>
       </div>
       <div class="half-width">
@@ -120,7 +121,7 @@
           We are also able to repair your reputation or manage a crisis for you.
         </p>
         <div> <!--button-->
-          <a href="#contact"><button class="button">More information</button></a>
+          <a href="#contact"><button class="button wow bounceIn"data-wow-delay="0.1s">More information</button></a>
         </div>
       </div>
       <div class="half-width" id="flex-order">
@@ -134,7 +135,7 @@
     <div class="content-wrapper"> <!-- pricing items visible by default-->
       <h2>Packages</h2>
       <div class="full-width">
-        <div class="half-width" id="add-line-height"> <!-- additional line height in tablet & larger-->
+        <div class="half-width"> 
           <h3>Email Marketing</h3>
           <div>
             <a href="#contact"><button class="pricing-button">Contact us!</button></a>
@@ -225,6 +226,10 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/wow.min.js"></script> <!-- wow.js animation when section in view-->
+  <script>
+    new WOW().init();
+    </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
