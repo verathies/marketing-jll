@@ -32,6 +32,13 @@
   <main>
   <section id="hero">
     <!-- add hero content here-->
+    <div id="jumbotron">
+      <h1>JLL Marketing</h1>
+      <span>Your Digital Marketing Agency in Barcelona, Spain</span>
+      <div> <!-- button -->
+        <a href="#contact"><button class="button">Learn more</button></a>
+      </div>
+    </div>
   </section>
 
   <section id="about">
@@ -97,7 +104,7 @@
           like Facebook, Twitter, Instagram, and Pinterest, you're missing out! Great marketing on social media can bring remarkable success to your business, 
           creating devoted brand advocates and even driving leads and sales. If you are not active/presence on the social Media’s please contact us for a free discussion.
         </p>
-        <div id="button-container">
+        <div> <!-- button -->
           <a href="#contact"><button class="button">Contact us!</button></a>
         </div>
       </div>
@@ -106,17 +113,17 @@
       </div>
     </div>
     <div class="full-width">
-      <div class="half-width plus-padding-left"> 
-        <h3>Google Adwords/ <br id="break">Online Reputation</h3>
+      <div class="half-width plus-padding-left  plus-padding-top"> 
+        <h3>Google Adwords/ <br id="break">Online Reputation</h3> <!-- #break display:none in media query tablet & larger-->
         <p>If necessary, we will launch a customized advertising campaign with the endless possibilities that Google offers. 
           We maintain the online reputation of your brand or products with the right SEO strategy and online marketing plan. 
           We are also able to repair your reputation or manage a crisis for you.
         </p>
-        <div id="button-container">
+        <div> <!--button-->
           <a href="#contact"><button class="button">More information</button></a>
         </div>
       </div>
-      <div class="half-width plus-padding-top" id="flex-order">
+      <div class="half-width" id="flex-order">
         <figure><img src="img/desk.jpg" alt="desk"></figure>
       </div>
     </div>
@@ -124,7 +131,38 @@
   </section>
 
   <section id="pricing">
-    <!-- add pricing content here-->
+    <div class="content-wrapper"> <!-- pricing items visible by default-->
+      <h2>Packages</h2>
+      <div class="full-width">
+        <div class="half-width" id="add-line-height"> <!-- additional line height in tablet & larger-->
+          <h3>Email Marketing</h3>
+          <div>
+            <a href="#contact"><button class="pricing-button">Contact us!</button></a>
+          </div>
+        </div>
+        <div class="half-width">
+          <h3>Social Media Marketing/<br>Community Management</h3>
+          <div>
+            <a href="#contact"><button class="pricing-button">Standard</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="full-width">
+        <div class="half-width">
+          <h3>Social Media Marketing/<br>Community Management</h3>
+          <div>
+            <a href="#contact"><button class="pricing-button">Premium</button></a>
+          </div>
+        </div>
+        <div class="half-width">
+          <h3>Social Media Marketing/<br>Community Management</h3>
+          <div>
+            <a href="#contact"><button class="pricing-button">Premium Plus</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- add pricing items on hover over-->
   </section>
 
   <section id="seo-costs">
