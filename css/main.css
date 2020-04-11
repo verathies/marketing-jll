@@ -294,7 +294,7 @@ max-width:450px;
 #pricing .half-width{
   height: 300px;
   width:300px;
-  background: rgb(1, 6, 34, 0.8); /*80% opacity for background*/
+  background: #010622; 
   margin: 10px 5px;
   align-content: center;
 }
@@ -313,6 +313,41 @@ max-width:450px;
   margin: 4px 0 40px 0;
 }
 
+/************************   PRICING CONTENT AT HOVER OVER -MOBILE    *******************************/
+
+.overlay-container {
+  position:relative;
+}
+
+.overlay {
+top: 0;
+bottom: 0;
+position: absolute;
+opacity: 0; /* hide content by default */
+transition: .5s ease;
+width:100%;
+height:100%;
+}
+
+.overlay-container:hover .overlay { /* show content when hovering over div*/
+  opacity: 1;
+}
+
+.text {  
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 0.875em;
+}
+
+aside { /* adjust styling of prices here*/
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bold;
+}
 
 /*******************************************************  FOOTER- MOBILE    **************************************************/
 footer {
@@ -558,6 +593,15 @@ span{
     font-size: 1.1875em;
   }
 
+/************************   PRICING CONTENT AT HOVER OVER- TABLET    *******************************/
+
+.text{
+  font-size: 1em;
+}
+
+aside{
+  font-size: 1.5em;
+}
 /******************************************* FOOTER TABLET *******************************************/
 footer {  /*add padding-top to footer section*/
   padding-top: 80px; 
