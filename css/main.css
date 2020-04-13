@@ -374,7 +374,7 @@ width:100%;
 height:100%;
 }
 
-.overlay-container:hover .overlay { /* show content when hovering over div*/
+.overlay-container:hover .overlay .overlay-container:focus .overlay{ /* show content when hovering over div or on click if hover not possible*/
   opacity: 1;
 }
 
